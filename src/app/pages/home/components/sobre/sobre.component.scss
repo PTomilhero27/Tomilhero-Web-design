@@ -1,0 +1,13 @@
+
+
+.icones-sobre {
+    border: 3px solid var(--primary);
+    border-radius: 99999%;
+
+    &:hover {
+        background: var(--primary);
+        img {
+            filter: brightness(7.5);
+        }
+    }
+  }

@@ -1,0 +1,15 @@
+.animacao {
+    animation: up-down 2s ease-in-out infinite ;
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
