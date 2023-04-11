@@ -1,9 +1,13 @@
-<app-header></app-header>
+<app-header (link)="linkPage($event)"></app-header>
 
 <div class="tw-bg-primary content">
     <app-contato></app-contato>
 </div>
 
-<div class=" tw-h-[100vh]">
+<div id="sobre" class=" tw-h-[100vh]">
     <app-sobre></app-sobre>
+</div>
+
+<div id="trabalho" class="tw-bg-primary tw-w-[100vw] tw-h-[100vh]">
+    <app-trabalho></app-trabalho>
 </div>

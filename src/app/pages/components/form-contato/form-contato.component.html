@@ -1,0 +1,38 @@
+<form [formGroup]="form">
+
+  <mat-form-field class="tw-w-full">
+    <mat-label>Nome</mat-label>
+    <input  formControlName="nome" type="text" matInput placeholder="Nome" />
+  </mat-form-field>
+
+  <div class="tw-flex tw-justify-between">
+    <mat-form-field class="tw-w-[48%]">
+      <mat-label>Email</mat-label>
+      <input  formControlName="email" type="email" matInput placeholder="Ex seuEmail@gmail.com" />
+    </mat-form-field>
+
+    <mat-form-field class="tw-w-[48%]">
+      <mat-label>Telefone</mat-label>
+      <input
+        formControlName="telefone"
+        type="tel"
+        mask="(00) 00000-0000"
+        matInput
+        placeholder="(**)-*****-****"
+      />
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="tw-w-full">
+    <mat-label>Nos conte sua ideia</mat-label>
+    <textarea  formControlName="descricao" matInput placeholder="O que você está querendo?"></textarea>
+  </mat-form-field>
+
+  <button (click)="enviar()"
+    class="tw-text-white tw-border tw-border-white tw-rounded-sm tw-py-2 tw-px-4 tw-h-12 tw-w-full"
+  >
+    Enviar
+  </button>
+
+</form>
+

@@ -1,0 +1,51 @@
+.transform {
+    top: -10px;
+    transition: 0.5s;
+    position: absolute;
+    width: 95.5%;
+}
+
+.hover {
+    transform: translateY(-150px);
+}
+
+.transicao {
+    transition: .5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.filter-invert {
+    filter: invert(1);
+}
+
+.transicaoDois {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+}
+
+.atendimento {
+   background-color: #acdbe3 !important;
+}
+
+.prototipacao { 
+    background-color: #336699 !important;
+}
+
+.desenvolvimento {
+    background-color: #4b8f8c !important;
+}
+
+.homolog {
+    background-color: #a9d477 !important;
+}
+
+.producao {
+    background-color: #5cb85c !important;
+}
+
+.suporte {
+    background-color: #8bc34a !important;
+}

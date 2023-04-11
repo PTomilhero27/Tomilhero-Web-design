@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +7,20 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  @Output() link: EventEmitter<any> = new EventEmitter();
+
   public linksHeader = [
-    {href: '', titulo: "Tomilhero27"},
-    {href: '', titulo: "Nosso Trabalho"},
+    {href: 'sobre', titulo: "Tomilhero27"},
+    {href: 'trabalho', titulo: "Nosso Trabalho"},
     {href: '', titulo: "O que fazemos"},
     {href: '', titulo: "Nossas tecnologias"},
     {href: '', titulo: "Contato"},
     {href: '', titulo: "(11) 94178-0315"},
   ]
+
+
+  linkHeader(link: string) {
+    this.link.emit(link);
+  }
 
 }

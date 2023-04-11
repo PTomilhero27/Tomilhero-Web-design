@@ -5,11 +5,9 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContatoComponent } from './components/contato/contato.component';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatButtonModule} from '@angular/material/button';
-import { NgxMaskModule } from 'ngx-mask';
-import { SobreComponent } from './components/sobre/sobre.component'
+import { SobreComponent } from './components/sobre/sobre.component';
+import { TrabalhoComponent } from './components/trabalho/trabalho.component'
+import { FormContatoModule } from '../components/form-contato/form-contato.module';
 
 
 @NgModule({
@@ -17,16 +15,13 @@ import { SobreComponent } from './components/sobre/sobre.component'
     HomeComponent,
     HeaderComponent,
     ContatoComponent,
-    SobreComponent
+    SobreComponent,
+    TrabalhoComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    NgxMaskModule.forRoot()
-    
+    HomeRoutingModule,    
+    FormContatoModule
   ]
 })
 export class HomeModule { }

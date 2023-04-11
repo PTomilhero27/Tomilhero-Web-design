@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  linkPage(event: any) {
+    const element = document.getElementById(event);
+    if(element) element.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }
