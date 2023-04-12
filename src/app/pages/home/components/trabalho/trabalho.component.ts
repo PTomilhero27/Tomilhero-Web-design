@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-trabalho',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trabalho.component.scss']
 })
 export class TrabalhoComponent implements OnInit {
+
+  constructor(private renderer: Renderer2, private el: ElementRef){}
 
   public trabalho = [
     {
@@ -58,8 +61,27 @@ export class TrabalhoComponent implements OnInit {
     this.trabalho.forEach(element => {
       this.test.push(`hover ${element.color}`)
     });
+
+    this.animacao()
+
     
   }
+
+  animacao() {
+    const elements = this.el.nativeElement.querySelectorAll('.animacaoScroll');
+    const triggerBottom = window.innerHeight / 6 * 4;
+    fromEvent(window, 'scroll').subscribe(() => {
+      elements.forEach((element: any) => {
+        const boxTop = element.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          this.renderer.addClass(element, 'show');
+        } else {
+          this.renderer.removeClass(element, 'show');
+        }
+      });
+    });
+  }
+  
 
 
   acaoBotoesMetodos(index: number) {

@@ -14,7 +14,7 @@ export class HeaderComponent {
     {href: 'trabalho', titulo: "Nosso Trabalho"},
     {href: 'tecnologia', titulo: "tecnologias"},
     {href: 'servicos', titulo: "serviços"},
-    {href: '', titulo: "Contato"},
+    {href: 'contato', titulo: "Contato"},
     {href: '', titulo: "(11) 94178-0315"},
   ]
 
