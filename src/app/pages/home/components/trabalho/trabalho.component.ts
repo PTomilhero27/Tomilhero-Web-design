@@ -25,28 +25,28 @@ export class TrabalhoComponent implements OnInit {
     {
       titulo: "Desenvolvimento",
       descricao: "Iremos montar todo o cronograma do projeto, combinaremos reuniões semanais para apresentarmos as evoluções do projeto.",
-      src: "",
+      src: "code",
       color: 'desenvolvimento'
     },
 
     {
       titulo: "Homologação",
       descricao: "Vamos liberar o sistema para que o cliente possa acompanhar o desenvolvimento em partes e este será o momento que trataremos possíveis falhas de desenvolvimento.",
-      src: "",
+      src: "check-double",
       color: "homolog"
     },
 
     {
       titulo: "Produção",
       descricao: "Disponibilizaremos a solução em ambiente real e daremos apoio tecnico durante todo o período de garantia definido em contrato.",
-      src: "",
+      src: "globe",
       color: 'producao'
     },
 
     {
       titulo: "Suporte",
       descricao: "Realizamos a correção de qualquer defeito encontrado durante o prazo de garantia. Caso seja desejo do cliente, ele pode contratar o serviço de suporte",
-      src: "",
+      src: "laptop",
       color: 'suporte'
     },
   ]

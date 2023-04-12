@@ -11,3 +11,17 @@ body {
     overflow-x: none;
 }
   
+
+@media (max-width: 1000px) {
+    .responsive-container {
+      padding: 20px;
+      margin: 20px;
+      flex-direction: column;
+
+      span {
+        width: 100%;
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
