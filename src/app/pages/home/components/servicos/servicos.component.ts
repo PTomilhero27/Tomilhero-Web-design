@@ -41,7 +41,7 @@ export class ServicosComponent {
 
   animacao() {
     const elements = this.el.nativeElement.querySelectorAll('.animacaoScroll');
-    const triggerBottom = window.innerHeight / 6 * 4;
+    const triggerBottom = window.innerHeight / 4 * 4;
     fromEvent(window, 'scroll').subscribe(() => {
       elements.forEach((element: any) => {
         const boxTop = element.getBoundingClientRect().top;
