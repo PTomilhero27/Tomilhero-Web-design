@@ -12,8 +12,8 @@ export class HeaderComponent {
   public linksHeader = [
     {href: 'sobre', titulo: "Tomilhero27"},
     {href: 'trabalho', titulo: "Nosso Trabalho"},
-    {href: '', titulo: "O que fazemos"},
-    {href: '', titulo: "Nossas tecnologias"},
+    {href: 'tecnologia', titulo: "tecnologias"},
+    {href: 'servicos', titulo: "serviços"},
     {href: '', titulo: "Contato"},
     {href: '', titulo: "(11) 94178-0315"},
   ]

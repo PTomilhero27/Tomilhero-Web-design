@@ -1,13 +1,21 @@
-<app-header (link)="linkPage($event)"></app-header>
+<app-header id="home" (link)="linkPage($event)"></app-header>
 
 <div class="tw-bg-primary content">
     <app-contato></app-contato>
 </div>
 
-<div id="sobre" class=" tw-h-[100vh]">
+ <app-sessao id="sobre"  [class]="'tw-bg-white'" [titulo]="'Sobre Tomilhero web design'" [descricao]="'Nós somos uma empresa nova e entusiasmada no mercado de desenvolvimento de sites e aplicativos, dedicados a fornecer soluções personalizadas e de alta qualidade para nossos clientes. Nossa missão é ajudar nossos clientes a alcançar seus objetivos de negócios por meio de soluções tecnológicas inovadoras e personalizadas. Com uma equipe altamente qualificada e uma abordagem focada no cliente, estamos comprometidos em fornecer serviços excepcionais de desenvolvimento de sites e aplicativos e construir relacionamentos duradouros com nossos clientes.'">
     <app-sobre></app-sobre>
-</div>
+</app-sessao>
 
-<div id="trabalho" class="tw-bg-primary tw-w-[100vw] tw-h-[100vh]">
+<app-sessao id="trabalho" [class]="'tw-bg-primary'" [titulo]="'Nosso método de trabalho'" [descricao]="'Click nos cards para saber como iremos realizar sua ideia'">
     <app-trabalho></app-trabalho>
-</div>
+</app-sessao>
+
+<app-sessao id="tecnologia" [titulo]="'Tecnologias'" [descricao]="'Algumas das tecnologias que trabalhamos'">
+    <app-tecnologias></app-tecnologias>
+</app-sessao>
+
+<app-sessao id="servicos" [class]="'tw-bg-primary'" [titulo]="'Nossos serviços'" [descricao]="'Aplicamos as metodologias e tecnologias mais atuais para descomplicar a criação do seu sistema WEB ou aplicativo móvel. Dos projetos mais simples aos mais complexos, estaremos com vocês em cada etapa dessa jornada'">
+    <app-servicos></app-servicos>
+</app-sessao> 

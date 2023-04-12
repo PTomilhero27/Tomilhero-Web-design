@@ -1,34 +1,14 @@
-<div class="tw-my-0 tw-mx-52 tw-py-20 tw-flex tw-flex-col tw-justify-center">
-  <div class="tw-flex tw-justify-center tw-flex-col tw-text-center">
-    <p class="tw-text-4xl tw-font-light tw-text-text">
-      Sobre <strong> Tomilhero web design </strong> 
-    </p>
-
-    <span class="tw-mt-5 tw-text-lg tw-text-text tw-text-">
-      Nós somos uma empresa nova e entusiasmada no mercado de desenvolvimento de
-      sites e aplicativos, dedicados a fornecer soluções personalizadas e de
-      alta qualidade para nossos clientes. Nossa missão é ajudar nossos clientes
-      a alcançar seus objetivos de negócios por meio de soluções tecnológicas
-      inovadoras e personalizadas. Com uma equipe altamente qualificada e uma
-      abordagem focada no cliente, estamos comprometidos em fornecer serviços
-      excepcionais de desenvolvimento de sites e aplicativos e construir
-      relacionamentos duradouros com nossos clientes.
-    </span>
-  </div>
-
   <div class="tw-flex tw-flex-wrap tw-mt-7">
-    <div *ngFor="let item of itens" class="tw-flex tw-w-1/2 tw-pr-8 tw-mt-14">
-      <div class="tw-flex tw-items-center">
-        <div class="icones-sobre tw-h-24 tw-w-24 tw-mr-7 tw-flex tw-justify-center tw-text-center">
+    <div *ngFor="let item of itens" class="tw-flex lg:tw-w-1/2 lg:tw-pr-8 tw-mt-14">
+      <div class="tw-flex tw-flex-col lg:tw-flex-row tw-items-center">
+        <div class="icones-sobre tw-h-24 tw-w-24 lg:tw-mr-7 tw-flex tw-justify-center tw-text-center">
             <img class="tw-w-8" [src]='item.src' alt="">
         </div>
   
-        <div class="tw-w-full">
-            <p class="tw-text-base tw-uppercase tw-font-medium tw-text-[#808080]">{{item.titulo}}</p>
-            <span class="tw-text-sm tw-text-[#808080]">{{item.descricao}}</span>
+        <div class="tw-w-full lg:tw-mt-auto tw-mt-4 tw-text-center lg:tw-text-start">
+            <p class="tw-text-lg tw-uppercase tw-font-bold tw-text-[#808080]">{{item.titulo}}</p>
+            <p class="tw-text-sm tw-text-[#808080]">{{item.descricao}}</p>
         </div>
       </div>
     </div>
   </div>
-  
-</div>
