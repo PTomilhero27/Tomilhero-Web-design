@@ -28,7 +28,7 @@
     <textarea  formControlName="descricao" matInput placeholder="O que você está querendo?"></textarea>
   </mat-form-field>
 
-  <button (click)="enviar()" class="tw-text-white tw-border tw-border-white tw-rounded-sm tw-py-2 tw-px-4 tw-h-12 tw-w-full">
+  <button (click)="enviar()" [class]="class" class="tw-border tw-font-bold tw-rounded-sm tw-py-2 tw-px-4 tw-h-12 tw-w-full">
     Enviar
   </button>
 

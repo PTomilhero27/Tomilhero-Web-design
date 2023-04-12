@@ -8,14 +8,19 @@
     <app-sobre></app-sobre>
 </app-sessao>
 
-<app-sessao id="trabalho" [class]="'tw-bg-primary'" [titulo]="'Nosso método de trabalho'" [descricao]="'Click nos cards para saber como iremos realizar sua ideia'">
+<app-sessao id="trabalho"  [class]="'tw-bg-primary'" [titulo]="'Nosso método de trabalho'" [descricao]="'Click nos cards para saber como iremos realizar sua ideia'">
     <app-trabalho></app-trabalho>
 </app-sessao>
 
-<app-sessao id="tecnologia" [titulo]="'Tecnologias'" [descricao]="'Algumas das tecnologias que trabalhamos'">
+<app-sessao id="tecnologia" [class]="'tw-bg-white'" [titulo]="'Tecnologias'" [descricao]="'Algumas das tecnologias que trabalhamos'">
     <app-tecnologias></app-tecnologias>
 </app-sessao>
 
 <app-sessao id="servicos" [class]="'tw-bg-primary'" [titulo]="'Nossos serviços'" [descricao]="'Aplicamos as metodologias e tecnologias mais atuais para descomplicar a criação do seu sistema WEB ou aplicativo móvel. Dos projetos mais simples aos mais complexos, estaremos com vocês em cada etapa dessa jornada'">
     <app-servicos></app-servicos>
 </app-sessao> 
+
+<app-sessao id="servicos" [class]="'tw-bg-white'" [titulo]="'Gostaria de agendar uma reunião para discutirmos sobre o seu projeto?'">
+    <app-entrar-contato></app-entrar-contato>
+</app-sessao> 
+

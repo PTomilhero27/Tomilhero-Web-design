@@ -1,0 +1,14 @@
+
+<div class="tw-my-14">
+
+<div class="tw-mb-14 tw-flex tw-flex-col lg:tw-flex-row tw-items-center lg:tw-items-start tw-justify-evenly">
+    <div class="tw-mt-5 lg:tw-mt-0 tw-flex tw-items-center" *ngFor="let item of itens">
+        <img class="tw-w-[50px] tw-mr-4 tw-h-10" src="../../../../../assets/fontawesome-pro-5.15.4-web/svgs/regular/{{item.src}}.svg" alt="Icones para representar nossos serviços">
+        <p class="tw-font-bold tw-text-primary tw-text-base">{{item.titulo}}</p>
+    </div>
+</div>
+
+<app-form-contato [class]="'tw-text-white tw-bg-primary'"></app-form-contato>
+
+
+</div>
