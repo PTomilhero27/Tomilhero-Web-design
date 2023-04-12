@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./form-contato.component.scss'],
 })
 export class FormContatoComponent implements OnInit {
+
+  @Input() class: string = '';
 
   public form: FormGroup;
 

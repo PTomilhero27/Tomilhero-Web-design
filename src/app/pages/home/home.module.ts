@@ -11,6 +11,7 @@ import { FormContatoModule } from '../components/form-contato/form-contato.modul
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { SessaoModule } from '../components/sessao/sessao.module';
+import { EntrarContatoComponent } from './components/entrar-contato/entrar-contato.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SessaoModule } from '../components/sessao/sessao.module';
     SobreComponent,
     TrabalhoComponent,
     TecnologiasComponent,
-    ServicosComponent
+    ServicosComponent,
+    EntrarContatoComponent
   ],
   imports: [
     CommonModule,
