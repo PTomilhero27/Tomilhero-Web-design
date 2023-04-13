@@ -69,9 +69,9 @@ body {
 
 .show {
   opacity: 1;
-  animation: animar 1s ease-in-out normal; /* Animação usando keyframes */
+  animation: animar .5s ease-in-out normal; /* Animação usando keyframes */
 }
 
 .reverse {
-  animation: animar-reverse 1s ease-in-out normal;
+  animation: animar-reverse .5s ease-in-out normal;
 }
