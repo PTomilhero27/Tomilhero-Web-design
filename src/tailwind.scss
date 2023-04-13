@@ -38,20 +38,40 @@ body {
   }
 }
 
+
+@keyframes animar {
+  100% {
+    transform: translateX(0);
+    
+  }
+  0% {
+    transform: translateX(-400%);
+  }
+}
+
+@keyframes animar-reverse {
+  100% {
+    transform: translateX(-400%);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+
+
 .aparecendo {
   animation: fade-out 2s ease-in-out forwards; /* Animação usando keyframes */
 }
 
-
 .animacaoScroll {
-  transform: translateX(400%);
-  transition: transform 1s ease;
-}
-
-.animacaoScroll:nth-of-type(event) {
-  transform: translateX(-400%);
+  opacity: 0;
 }
 
 .show {
-  transform: translateX(0);
+  opacity: 1;
+  animation: animar 1s ease-in-out normal; /* Animação usando keyframes */
+}
+
+.reverse {
+  animation: animar-reverse 1s ease-in-out normal;
 }

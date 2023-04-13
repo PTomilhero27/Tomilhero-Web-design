@@ -1,33 +1,39 @@
-<div class="animacaoScroll show">
-    <app-header id="home" (link)="linkPage($event)"></app-header>
-</div>
+<div class="">
+    <div class="animacaoScroll show">
+        <app-header id="home" (link)="linkPage($event)"></app-header>
+    </div>
 
-<div class="animacaoScroll show tw-bg-primary content">
-    <app-contato></app-contato>
-</div>
+    <div class="animacaoScroll show tw-bg-primary content">
+        <app-contato></app-contato>
+    </div>
 
-<div class="animacaoScroll">
-    <app-sessao id="sobre"   [class]="'tw-bg-white'" [titulo]="'Sobre Tomilhero web design'" [descricao]="'Nós somos uma empresa nova e entusiasmada no mercado de desenvolvimento de sites e aplicativos, dedicados a fornecer soluções personalizadas e de alta qualidade para nossos clientes. Nossa missão é ajudar nossos clientes a alcançar seus objetivos de negócios por meio de soluções tecnológicas inovadoras e personalizadas. Com uma equipe altamente qualificada e uma abordagem focada no cliente, estamos comprometidos em fornecer serviços excepcionais de desenvolvimento de sites e aplicativos e construir relacionamentos duradouros com nossos clientes.'">
-        <app-sobre></app-sobre>
-    </app-sessao>
-</div>
+    <div class="animacaoScroll">
+        <app-sessao id="sobre"   [class]="'tw-bg-white'" [titulo]="'Sobre Tomilhero web design'" [descricao]="'Nós somos uma empresa nova e entusiasmada no mercado de desenvolvimento de sites e aplicativos, dedicados a fornecer soluções personalizadas e de alta qualidade para nossos clientes. Nossa missão é ajudar nossos clientes a alcançar seus objetivos de negócios por meio de soluções tecnológicas inovadoras e personalizadas. Com uma equipe altamente qualificada e uma abordagem focada no cliente, estamos comprometidos em fornecer serviços excepcionais de desenvolvimento de sites e aplicativos e construir relacionamentos duradouros com nossos clientes.'">
+            <app-sobre></app-sobre>
+        </app-sessao>
+    </div>
 
-<app-sessao id="trabalho" [class]="'tw-bg-primary'" [titulo]="'Nosso método de trabalho'" [descricao]="'Click nos cards para saber como iremos realizar sua ideia'">
-    <app-trabalho></app-trabalho>
-</app-sessao>
+    <div class="animacaoScroll">
+        <app-sessao id="trabalho"  [class]="'tw-bg-primary'" [titulo]="'Nosso método de trabalho'" [descricao]="'Click nos cards para saber como iremos realizar sua ideia'">
+            <app-trabalho></app-trabalho>
+        </app-sessao>
+    </div>
 
-<div class="animacaoScroll">
-    <app-sessao id="tecnologia" [class]="'tw-bg-white'" [titulo]="'Tecnologias'" [descricao]="'Algumas das tecnologias que trabalhamos'">
-        <app-tecnologias></app-tecnologias>
-    </app-sessao>
-</div>
+    <div class="animacaoScroll">
+        <app-sessao id="tecnologia"  [class]="'tw-bg-white'" [titulo]="'Tecnologias'" [descricao]="'Algumas das tecnologias que trabalhamos'">
+            <app-tecnologias></app-tecnologias>
+        </app-sessao>
+    </div>
 
-<app-sessao id="servicos" [class]="'tw-bg-primary'" [titulo]="'Nossos serviços'" [descricao]="'Aplicamos as metodologias e tecnologias mais atuais para descomplicar a criação do seu sistema WEB ou aplicativo móvel. Dos projetos mais simples aos mais complexos, estaremos com vocês em cada etapa dessa jornada'">
-    <app-servicos (link)="linkPage($event)"></app-servicos>
-</app-sessao> 
+    <div class="animacaoScroll">
+        <app-sessao id="servicos"  [class]="'tw-bg-primary'" [titulo]="'Nossos serviços'" [descricao]="'Aplicamos as metodologias e tecnologias mais atuais para descomplicar a criação do seu sistema WEB ou aplicativo móvel. Dos projetos mais simples aos mais complexos, estaremos com vocês em cada etapa dessa jornada'">
+            <app-servicos (link)="linkPage($event)"></app-servicos>
+        </app-sessao> 
+    </div>
 
-<div class="animacaoScroll">
-    <app-sessao id="contato" [class]="'tw-bg-white'" [titulo]="'Gostaria de agendar uma reunião para discutirmos sobre o seu projeto?'">
-        <app-entrar-contato></app-entrar-contato>
-    </app-sessao> 
+    <div class="animacaoScroll">
+        <app-sessao id="servicos"  [class]="'tw-bg-white'" [titulo]="'Gostaria de agendar uma reunião para discutirmos sobre o seu projeto?'">
+            <app-entrar-contato></app-entrar-contato>
+        </app-sessao> 
+    </div>
 </div>

@@ -1,5 +1,5 @@
-import { Component, ElementRef, EventEmitter, Output, Renderer2 } from '@angular/core';
-import { fromEvent } from 'rxjs';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-servicos',
@@ -29,28 +29,13 @@ export class ServicosComponent {
 
   @Output() link: EventEmitter<any> = new EventEmitter();
 
-  constructor(private renderer: Renderer2, private el: ElementRef) { }
+  constructor() { }
 
   linkPage() {
     this.link.emit("contato")
   }
 
   ngOnInit() {
-    this.animacao()
   }
 
-  animacao() {
-    const elements = this.el.nativeElement.querySelectorAll('.animacaoScroll');
-    const triggerBottom = window.innerHeight / 4 * 4;
-    fromEvent(window, 'scroll').subscribe(() => {
-      elements.forEach((element: any) => {
-        const boxTop = element.getBoundingClientRect().top;
-        if (boxTop < triggerBottom) {
-          this.renderer.addClass(element, 'show');
-        } else {
-          this.renderer.removeClass(element, 'show');
-        }
-      });
-    });
-  }
 }

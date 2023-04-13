@@ -22,14 +22,18 @@ export class HomeComponent implements OnInit {
 
   animacao() {
     const elements = this.el.nativeElement.querySelectorAll('.animacaoScroll');
-    const triggerBottom = window.innerHeight / 4 * 4;
+    const triggerBottom = window.innerHeight / 4.3 * 4;
     fromEvent(window, 'scroll').subscribe(() => {
       elements.forEach((element: any) => {
         const boxTop = element.getBoundingClientRect().top;
         if (boxTop < triggerBottom) {
           this.renderer.addClass(element, 'show');
+          this.renderer.removeClass(element, 'reverse');
         } else {
-          this.renderer.removeClass(element, 'show');
+          this.renderer.addClass(element, 'reverse');
+          setTimeout(() => {
+            this.renderer.removeClass(element, 'show');
+          }, 500);
         }
       });
     });
