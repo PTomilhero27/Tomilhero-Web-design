@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
 
   animacao() {
     const elements = this.el.nativeElement.querySelectorAll('.animacaoScroll');
-    const triggerBottom = window.innerHeight / 4 * 4;
+    const triggerBottom = window.innerHeight / 2 * 4;
     fromEvent(window, 'scroll').subscribe(() => {
       elements.forEach((element: any) => {
         const boxTop = element.getBoundingClientRect().top;
